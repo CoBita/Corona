@@ -2,12 +2,13 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolVersion
     defaultConfig {
-        applicationId "com.cocorp.cotraveler"
+        applicationId "com.bita.corona"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
@@ -79,6 +80,9 @@ dependencies {
 
     // Permission
     implementation "com.github.Hydratant:SPermission:$permission_version"
+
+    // Firebase
+    implementation "com.google.firebase:firebase-analytics:$firebase_analytics_version"
 
     // 테스트
     testImplementation 'junit:junit:4.12'

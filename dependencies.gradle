@@ -45,6 +45,12 @@ ext {
     // glide
     glide_version = '4.11.0'
 
+    // GoogleService
+    google_service_version = '4.3.3'
+
+    // Firebase
+    firebase_analytics_version = '17.4.1'
+
     //permission
     permission_version = '1.0.6'
 }
